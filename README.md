@@ -1,7 +1,7 @@
 ### Install
 
 ~~~bash
-git clone https://github.com/sdegutis/hydra-grid.git ~/.hydra/ext/grid
+$ git clone https://github.com/sdegutis/hydra-grid.git ~/.hydra/ext/grid
 ~~~
 
 ### Documentation
