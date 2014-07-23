@@ -1,9 +1,15 @@
-### Documentation:
+### Install
+
+~~~bash
+git clone https://github.com/sdegutis/hydra-grid.git ~/.hydra/ext/grid
+~~~
+
+### Documentation
 
 ~~~lua
 -- Usage:
 
-require "ext.grid"
+require "ext.grid.init"
 
 -- The grid is an partition of your screen; by default it is 3x2, i.e. 3 cells wide by 2 cells tall.
 -- The height is always fixed to 2 cells.
