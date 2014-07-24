@@ -10,14 +10,17 @@ $ git clone https://github.com/sdegutis/hydra-grid.git ~/.hydra/ext/grid
 require "ext.grid.init"
 ~~~
 
+### Terminology
+
 The grid is an partition of your screen; by default it is 3x2, i.e. 3 cells wide by 2 cells tall. The height is always fixed to 2 cells.
 
 Grid cells are just a table with keys: `x, y, w, h`
 
 For a grid of 2x2:
-  * a cell {x=0, y=0, w=1, h=1} will be in the upper-left corner
-  * a cell {x=1, y=0, w=1, h=1} will be in the upper-right corner
-  * and so on...
+
+* a cell {x=0, y=0, w=1, h=1} will be in the upper-left corner
+* a cell {x=1, y=0, w=1, h=1} will be in the upper-right corner
+* and so on...
 
 ### Core Functions
 
