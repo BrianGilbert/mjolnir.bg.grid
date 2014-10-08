@@ -97,9 +97,9 @@ end
 --- Function
 --- Increases the grid by the given number of cells; may be negative
 function grid.adjustheight(by)
-  ext.grid.GRIDHEIGHT = math.max(1, ext.grid.GRIDHEIGHT + by)
-  hydra.alert("grid is now " .. tostring(ext.grid.GRIDHEIGHT) .. " tiles high", 1)
-  fnutils.map(window.visiblewindows(), ext.grid.snap)
+  grid.GRIDHEIGHT = math.max(1, grid.GRIDHEIGHT + by)
+  alert.show("grid is now " .. tostring(grid.GRIDHEIGHT) .. " tiles high", 1)
+  fnutils.map(window.visiblewindows(), grid.snap)
 end
 
 --- mjolnir.bg.grid.adjustwidth(by)
