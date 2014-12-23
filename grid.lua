@@ -62,7 +62,7 @@ function grid.get(win)
   }
 end
 
---- mjolnir.bg.grid.set(win, grid, screen)
+--- mjolnir.bg.grid.set(win, cell, screen)
 --- Function
 --- Sets the cell this window should be on
 function grid.set(win, cell, screen)
