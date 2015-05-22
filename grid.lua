@@ -96,19 +96,23 @@ end
 --- mjolnir.bg.grid.adjustheight(by)
 --- Function
 --- Increases the grid by the given number of cells; may be negative
-function grid.adjustheight(by)
+function grid.adjustheight(by, skipSnap)
   grid.GRIDHEIGHT = math.max(1, grid.GRIDHEIGHT + by)
   alert.show("grid is now " .. tostring(grid.GRIDHEIGHT) .. " tiles high", 1)
-  fnutils.map(window.visiblewindows(), grid.snap)
+  if not skipSnap then
+    fnutils.map(window.visiblewindows(), grid.snap)
+  end
 end
 
 --- mjolnir.bg.grid.adjustwidth(by)
 --- Function
 --- Widens the grid by the given number of cells; may be negative
-function grid.adjustwidth(by)
+function grid.adjustwidth(by, skipSnap)
   grid.GRIDWIDTH = math.max(1, grid.GRIDWIDTH + by)
   alert.show("grid is now " .. tostring(grid.GRIDWIDTH) .. " tiles wide", 1)
-  fnutils.map(window.visiblewindows(), grid.snap)
+  if not skipSnap then
+    fnutils.map(window.visiblewindows(), grid.snap)
+  end
 end
 
 --- mjolnir.bg.grid.adjust_focused_window(fn)
